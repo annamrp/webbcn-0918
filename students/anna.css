@@ -1,0 +1,63 @@
+
+/*----------- reset ---------- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F8F8F8
+}
+
+/*---------- layout ---------*/
+.container{
+  margin: 0 20px;
+}
+@media (min-width: 768px){
+ main.site-main{
+   display: flex;
+ }
+  .container{
+    max-width: 728px;
+  }
+}
+
+/*-------- typography -------*/
+body{
+  font-family: 'Rajdhani', sans-serif;
+  color: #000100;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Paytone One', sans-serif;
+  color: #000100;
+}
+
+/*------------ Nav ----------*/
+nav {
+  background-color: #CFE2EF;
+  
+}
+ul.nav-bar{
+  display: flex;
+  justify-content: space-between;
+}
+li.nav-bar-li{
+  list-style-type: none;
+}
+a.nav-bar-item{
+  text-decoration: none;
+}
+
+/*---- Section Profile -----*/
+img {
+  width: 100%;
+}
+.hidden {
+  display: none;
+}

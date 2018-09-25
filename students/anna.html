@@ -1,28 +1,82 @@
-
 <!doctype html>
 <html lang="en">
 
 <head>
   <title>Hello, world!</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="anna.css">
+  <link href="https://fonts.googleapis.com/css?family=Paytone+One|Rajdhani" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
 <body>
-  <header class="header">
-    <a href="../index.html">Volver a la página principal</a>
-    <h1>Cohort 09 2018</h1>
-  </header>
-  <section class="profile">
-    <h2>Anna</h2>
-    <img src="https://placeimg.com/640/480/people" alt="people photo">
-    <p>¡Hola! Soy <em>Anna</em>, mami a tiempo completo y developer en proyecto ;p</p>
-    <h3>Intereses</h3>
-    <ul class="interests-list">
-      <li>Aprender</li>
-      <li>Aprender</li>
-      <li>Aprender</li>
+  <nav class="nav-bar">
+    <ul class="nav-bar-ul">
+      <li class="nav-bar-li">
+        <a class="nav-bar-item" href="../index.html">Home</a>
+      </li>
+      <li class="nav-bar-li">
+        <a class="nav-bar-item" href="#profile">Perfil</a>
+      </li>
+      <li class="nav-bar-li">
+        <a class="nav-bar-item" href="#experiments-anchor">Experimentos</a>
+      </li>
     </ul>
-  </section>
+  </nav>
+
+  <header class="header container">
+    <h1>Cohort 09 2018</h1>
+    <button class="toggle-profile">Hide Profile</button>
+    <button class="toggle-experiments">Hide Experiments</button>
+  </header>
+
+  <div class="search">
+    <label for="name"> Students</label>
+      <div class="input-student">
+        <input type="text">
+        <div class="search-results">
+          
+        </div>
+      </div>
+   
+  </div>
+  <main id="site-main">
+    <section id="profile-anchor" class="profile container">
+      <h2>Anna</h2>
+      <img src="https://preview.ibb.co/icmYZ9/June.jpg" alt="June">
+      <p>¡Hola! Soy <em>Anna</em>, mami a tiempo completo y developer en proyecto ;p</p>
+      <h3>Intereses</h3>
+      <ul class="interests-list">
+        <li>Aprender</li>
+        <li>Aprender</li>
+        <li>Aprender</li>
+      </ul>
+    </section>
+
+    <section id="experiments-anchor" class="experiments container">
+      <h2>Experimentos</h2>
+
+      <article class="card experiment">
+
+        <header class="card-header">
+          <h3 class="title">My first experiment</h3>
+        </header>
+
+        <div class="card-body">
+          <p><em>WIP</em></p>
+          <p>JS Basic</p>
+          <p><a href="" class="external">Míralo en Github</a></p>
+        </div>
+
+        <footer>
+          <p>Created in: xx/xx/xxxx</p>
+        </footer>
+      </article>
+    </section>
+
+  </main>
+  <script src="../students.js"></script>
+  <script type="text/JavaScript" src="anna.js"></script>
 </body>
+
 </html>
